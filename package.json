@@ -1,0 +1,10 @@
+{
+  "name": "sails-hook-healthcheck",
+  "version": "0.0.1",
+  "description": "A Sails hook to add rudimentary healthcheck endpoints to a sails app",
+  "main": "index.js",
+  "scripts": {
+  },
+  "author": "Nick Mitchinson",
+  "license": "MIT"
+}
