@@ -12,11 +12,13 @@ module.exports = function (sails) {
 
     routes: {
 
-      '/_healthcheck': function returnTime(req, res, next) {
-        return res.end(new Date().getTime().toString());
-      },
-      '/_healthcheck/ping': function returnPong(req, res, next) {
-        return res.end('pong');
+      before: {
+        '/_healthcheck': function returnTime(req, res, next) {
+          return res.end(new Date().getTime().toString());
+        },
+        '/_healthcheck/ping': function returnPong(req, res, next) {
+          return res.end('pong');
+        }
       }
 
     }
